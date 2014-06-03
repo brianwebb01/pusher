@@ -1,0 +1,39 @@
+{
+    "name": "indatus/pusher",
+    "description": "A parallel deployment tool",
+    "keywords": ["parallel deployment", "deployment", "pusher"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Kuhl",
+            "email": "benkuhl@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/lib"
+        ],
+        "files": [
+            "tests/PusherTest.php"
+        ]
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/filesystem": "4.3.*@dev",
+        "illuminate/support": "4.3.*@dev",
+        "kherge/amend": "~3.0",
+        "symfony/console": "2.4.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "dev-master",
+        "sebastian/comparator": "1.0.*@dev",
+        "phpunit/phpunit-mock-objects": "2.2.*@dev",
+        "phpunit/php-code-coverage": "3.0.*@dev"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "vendor-dir": "src/vendor"
+    },
+    "minimum-stability": "stable"
+}

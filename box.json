@@ -1,0 +1,19 @@
+{
+    "chmod": "0755",
+    "directories": ["src"],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                "Tester",
+                "Tests",
+                "tests",
+                "yaml"
+            ],
+            "in": "src/vendor"
+        }
+    ],
+    "main": "bin/pusher",
+    "output": "pusher.phar",
+    "stub": true
+}

@@ -1,0 +1,7 @@
+tests/coverage
+tests/meta
+/src/vendor
+.idea
+.DS_Store
+code-coverage
+deployment.json

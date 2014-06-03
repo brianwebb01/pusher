@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/../src/vendor/autoload.php';
+$app = new Symfony\Component\Console\Application('Pusher', '.1');
+$app->add(new Console\DeployCommand);
+
+$app->getHelperSet()->set(new KevinGH\Amend\Helper);
+
+$app->run();
